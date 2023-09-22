@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #7693b9;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #000000;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+  color: #0e0d0d;
+}
+
+form {
+  margin-top: 20px; /* Cambié el margen superior para que no se vea demasiado separado del título */
+}
+
+label {
+  display: block;
+  margin-bottom: 20px; /* Reduje el margen inferior para que se vea más compacto */
+  color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 95%; /* Cambié el ancho para que ocupen toda la caja del formulario */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end; /* Posiciona los elementos hacia la derecha */
+  align-items: flex-start; /* Posiciona los elementos hacia arriba */
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 200px; /* Cambia el tamaño máximo de la imagen según tus preferencias */
+}

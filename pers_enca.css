@@ -1,0 +1,51 @@
+/* Resetear márgenes y paddings */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo del rectángulo azul */
+.Azul-fondo {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 17%;
+  background-color: rgb(123, 166, 206);
+  z-index: -1; /* Asegura que el rectángulo esté detrás del contenido */
+}
+
+/* Estilo del contenedor de botones */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 17%;
+  position: relative; /* Asegura que el contenedor sea relativo para que los botones se coloquen encima del rectángulo */
+}
+
+/* Estilo de los botones */
+button {
+  padding: 10px 20px;
+  margin: 35px 10px 10px;
+  font-size: 16px;
+  background-color: rgb(123, 166, 206);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  text-decoration: none;
+  color: rgb(110, 110, 139);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: blue;
+  color: white;
+}
+
+/* Estilo de la imagen */
+.image {
+  position: absolute;
+  top: 0.1px;
+  left: 900px; /* Coloca la imagen en la esquina derecha con 10px de margen desde la parte superior y 10px desde la derecha */
+  max-width: 200px; /* Cambia el tamaño máximo de la imagen según tus preferencias */
+}

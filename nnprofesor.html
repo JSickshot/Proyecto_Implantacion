@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pers_enca.css">
+    <link rel="stylesheet" type="text/css" href="pers_alum.css">
+    <title>Profesores</title>
+</head>
+<body>
+    <div class="Azul-fondo"></div>
+    <div class="container">
+        <a href="principal.html"><button>Principal</button></a>
+        <a href="alumno.html"><button>Alumno</button></a>
+        <a href="profesor.html"><button>Profesor</button></a>
+        <a href="materias_carreras.html"><button>Materias/Carreras</button></a>
+        <a href="calificacion_asistencia.html"><button>Calificaciones/Asistencias</button></a>
+    </div>
+
+    <h1>Bases de Profesores</h1>
+
+    <!-- Botón para abrir el PopUp -->
+    <button id="registrarBtn" onclick="mostrarPopUp()">Registrar Nuevo Profesor</button>
+
+    <!-- PopUp para ingresar nuevos datos -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="cerrar" onclick="cerrarPopUp()">&times;</span>
+            <label>ID Profesor:</label>
+            <input type="text" id="idProfesor">
+            <label>Nombre:</label>
+            <input type="text" id="nombre">
+            <label>Apellido Paterno:</label>
+            <input type="text" id="apellidoPaterno">
+            <label>Apellido Materno:</label>
+            <input type="text" id="apellidoMaterno">
+            <label>Género:</label>
+            <select id="genero">
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Otro">Otro</option>
+            </select>
+            <label>Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento">
+            <label>Ciudad:</label>
+            <input type="text" id="ciudad">
+            <label>Alcaldía:</label>
+            <input type="text" id="alcaldia">
+            <label>Colonia:</label>
+            <input type="text" id="colonia">
+            <label>Calle:</label>
+            <input type="text" id="calle">
+            <label>NumeroExt:</label>
+            <input type="text" id="next">
+            <label>NumeroInt:</label>
+            <input type="text" id="nint">
+            <label>Codigo Postal:</label>
+            <input type="text" id="cp">
+            <label>Email:</label>
+            <input type="text" id="email">
+            <label>Telefono</label>
+            <input type="text" id="telefono">
+            <label for="si_no">Documentacion</label>
+            <input type="checkbox" id="documentacion">
+
+            <!-- Agrega aquí los demás campos del formulario -->
+            <button onclick="registrarProfesor()">Guardar</button>
+        </div>
+    </div>
+
+    <script src="carreras.js"></script>
+
+</body>
+
+</html>
