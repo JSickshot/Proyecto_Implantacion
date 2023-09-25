@@ -1,0 +1,55 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Color del fondo */
+    color: #333; /* Color de las letras */
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 90px;
+  }
+  
+  th, td {
+    border: 1px solid #1d1d1d; /* Color de las líneas */
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Estilos para cada celda */
+  td {
+    cursor: pointer;
+  }
+  
+  /* Estilos para cuando se hace clic en una celda */
+  td:hover {
+    background-color: #525d80; /* Color de fondo al pasar el mouse */
+  }
+  
+  /* Estilos para el contenedor de detalles */
+  #detalles {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Color del borde del contenedor de detalles */
+    background-color: #fff; /* Color de fondo del contenedor de detalles */
+    text-align: center;
+  }
+  
+  /* Personalización de tamaño de fuente para el contenedor de detalles */
+  #detalles p {
+    font-size: 18px;
+  }
+  
+  /* Personalización de la posición en la pantalla */
+  .container {
+    max-width: 800px;
+    margin: 0 auto; /* Centrar el contenido en la pantalla */
+  }
+  
