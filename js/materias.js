@@ -1,20 +1,16 @@
-// Datos de ejemplo (simulando una base de datos)
 let materiasData = [
   { ID: 1, NOMBRE: "Materia 1", CUATRIMESTRE: 1, ESTADO: "Activa" },
   { ID: 2, NOMBRE: "Materia 2", CUATRIMESTRE: 2, ESTADO: "Inactiva" },
-  // Agrega más datos de ejemplo aquí...
 ];
 
 let carrerasData = [
   { ID: 1, NOMBRE: "CARRERA 1", CUATRIMESTRE: 1, ESTADO: "Activa" },
   { ID: 2, NOMBRE: "CARRERA 2", CUATRIMESTRE: 2, ESTADO: "Inactiva" },
-  // Agrega más datos de ejemplo aquí...
 ];
 
 let salonesData = [
   { ID: 1, TIPO: "Aula", DISPONIBILIDAD: "Disponible", CAPACIDAD: 30, DESCRIPCION: "Salón para clases teóricas." },
   { ID: 2, TIPO: "Laboratorio", DISPONIBILIDAD: "Ocupado", CAPACIDAD: 20, DESCRIPCION: "Salón equipado para prácticas de laboratorio." },
-  // Agrega más datos de ejemplo aquí...
 ];
 
 function mostrarMaterias() {

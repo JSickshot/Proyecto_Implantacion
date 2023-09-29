@@ -21,18 +21,18 @@ h1 {
 }
 
 form {
-  margin-top: 20px; 
+  margin-top: 20px; /* Cambié el margen superior para que no se vea demasiado separado del título */
 }
 
 label {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Reduje el margen inferior para que se vea más compacto */
   color: #333;
 }
 
 input[type="text"],
 input[type="password"] {
-  width: 95%; 
+  width: 95%; /* Cambié el ancho para que ocupen toda la caja del formulario */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -57,14 +57,13 @@ button:hover {
 .container {
   position: relative;
   display: flex;
-  justify-content: flex-end; 
-  align-items: flex-start; 
+  justify-content: flex-end; /* Posiciona los elementos hacia la derecha */
+  align-items: flex-start; /* Posiciona los elementos hacia arriba */
 }
 
 .image {
   position: absolute;
   top: 0;
   right: 0;
-  max-width: 200px; 
+  max-width: 200px; /* Cambia el tamaño máximo de la imagen según tus preferencias */
 }
-

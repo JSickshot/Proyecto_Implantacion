@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/pers_enca.css">
-    <link rel="stylesheet" type="text/css" href="../css/pers_alum.css">
+    <link rel="stylesheet" type="text/css" href="../css/pers_alum.css"> 
     <title>Alumno</title>
 </head>
 
@@ -58,7 +58,7 @@
                 <span class="close" onclick="cerrarAgregarFormulario()">&times;</span>
                 <h2>Agregar Alumno</h2>
                 <form>
-                    <!-- Formulario de agregar aquí -->
+
                     <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" required>
     
@@ -111,7 +111,6 @@
                     <option value="Inactivo">Inactivo</option>
                 </select>
     
-                    <!-- Agrega los demás campos del formulario aquí -->
     
                     <button type="button" onclick="agregarAlumno()">Agregar</button>
                     <button type="button" onclick="cerrarAgregarFormulario()">Cancelar</button>
@@ -124,7 +123,6 @@
                 <span class="close" onclick="cerrarModificarFormulario()">&times;</span>
                 <h2>Modificar Alumno</h2>
                 <form>
-                    <!-- Formulario de modificar aquí -->
                     <input type="hidden" id="alumnoIDModificar">
     
                 <label for="nombreModificar">Nombre:</label>
@@ -178,16 +176,13 @@
                     <option value="Activo">Activo</option>
                     <option value="Inactivo">Inactivo</option>
                 </select>
-    
-                    <!-- Agrega los demás campos del formulario aquí -->
-    
                     <button type="button" id="guardarAlumnoModificar">Guardar Cambios</button>
                     <button type="button" onclick="cerrarModificarFormulario()">Cancelar</button>
                 </form>
             </div>
         </div>
     
-        <script src="alumno.js"></script>
+        <script src="../js/alumno.js"></script>
     </body>
     
     </html>
