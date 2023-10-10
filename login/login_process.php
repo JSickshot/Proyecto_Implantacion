@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    $sql = "SELECT * FROM usuarios WHERE usuario = ? AND pass = ?";
+    $sql = "SELECT * FROM profesores WHERE usuario = ? AND pass = ?";
     $stmt = $conn->prepare($sql);
 
     if (!$stmt) {
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows == 1) {
         $_SESSION["username"] = $username;
-        header("Location: ../html/principal.html"); 
+        header("Location: ../html/p_principal.html"); 
         exit();
     } else {
         
