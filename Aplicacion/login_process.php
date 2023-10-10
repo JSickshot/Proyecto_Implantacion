@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows == 1) {
         $_SESSION["username"] = $username;
-        header("Location: ../html/p_principal.html"); 
+        header("Location: ../perfiles/p_principal.html"); 
         exit();
     } else {
         
