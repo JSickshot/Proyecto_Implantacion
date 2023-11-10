@@ -48,3 +48,15 @@ INSERT INTO materias VALUES
     'redes d','aplicaciones moviles', 'legislación','basededatosa', 'basededatosb','termodinamica',
     'calculo diferencial','analisis y diseño','sistemas operativos','programacion de SO','Gestion de SO', 
     'analitica web', 'cloud computing','microprocesadores','embebidos'); 
+
+
+
+  CREATE TABLE P_principal (
+  ID INT AUTO_INCREMENT PRIMARY KEY,
+  nombre varchar (50),
+  cuenta int (10),
+  grado varchar(50)
+);
+
+INSERT INTO P_principal (nombre,cuenta,grado) VALUES
+    ('juan angel calvillo', 192654987, 'lic en base de datos'); 
