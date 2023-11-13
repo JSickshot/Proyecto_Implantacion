@@ -30,8 +30,8 @@ if (isset($_POST['nombre'], $_POST['password'])) {
 
             header("Location: index.php");
             exit();
-        } else {
-            echo "Contraseña incorrecta";
+        } else{
+            echo '<script>alert("Usuario o contraseña incorrectos.");</script>';
         }
     } else {
         echo "Usuario no encontrado";

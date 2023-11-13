@@ -14,9 +14,10 @@ $numeroCuenta = ($rol == 'profesor') ? 'P' . rand(10000000, 99999999) : 'A' . ra
 $sql = "INSERT INTO usuarios (nombre, password, numero_cuenta, rol) VALUES ('$nombre', '$password', '$numeroCuenta', '$rol')";
 
 if ($conexion->query($sql) === TRUE) {
-    echo "Usuario dado de alta exitosamente.";
+    header("Location: confirmacion.php?cuenta=$numeroCuenta");
+    exit();
 } else {
-    echo "Error al dar de alta al usuario: " . $conexion->error;
+    echo "Error: " . $sql . "<br>" . $conexion->error;
 }
 
 $conexion->close();

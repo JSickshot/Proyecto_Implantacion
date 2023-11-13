@@ -16,6 +16,6 @@
     }
     ?>
 
-    <p><a href="inscripcion.php">Iniciar sesión</a></p>
+    <p><a href="iniciar-sesion.php">Iniciar sesión</a></p>
 </body>
 </html>
