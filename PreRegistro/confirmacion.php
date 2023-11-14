@@ -11,11 +11,12 @@
     if (isset($_GET['cuenta'])) {
         $numeroCuentaAsignado = $_GET['cuenta'];
         echo "<p>Tu número de cuenta asignado es: $numeroCuentaAsignado recuerda anotarlo bien!!</p>";
+
     } else {
         echo "<p>Error: No se proporcionó un número de cuenta.</p>";
     }
     ?>
 
-    <p><a href="iniciar-sesion.php">Iniciar sesión</a></p>
+    <p><a href="../Aplicacion/login.php">Iniciar sesión</a></p>
 </body>
 </html>

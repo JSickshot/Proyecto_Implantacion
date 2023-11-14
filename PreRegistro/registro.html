@@ -2,38 +2,24 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Usuario</title>
 </head>
 <body>
-    <h1>Proceso de registro</h1>
+    <h1>Registro de Usuario</h1>
     
     <form action="procesar_registro.php" method="post">
-        <label for="nombre">Nombre(s):</label>
+        <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" required><br>
-
-        <label for="ApellidoM">Apellido Materno:</label>
-        <input type="text" name="ApellidoM" required><br>
-
-        <label for="ApellidoP">Apellido Paterno</label>
-        <input type="text" name="ApellidoP" required><br>
-
-        <label for="Ciudad">Ciudad: </label>
-        <input type="text" name="ciudad" required><br>
-
-        <label for="Direccion">Direccion:</label>
-        <input type="text" name="Direccion" required><br>
-
-        <label for="Delegacion">Delegación: </label>
-        <input type="text" name="Delegacion" required><br>
-
-        <label for="Colonia">Colonia: </label>
-        <input type="text" name="Colonia" required><br>
-
-        <label for="TelCel">Telefono Celular:</label>
-        <input type="text" name="TelCel" required><br>
         
         <label for="password">Contraseña:</label>
         <input type="password" name="password" required><br>
+
+        <label for="rol">Rol:</label>
+        <select name="rol" required>
+            <option value="alumno">Alumno</option>
+            <option value="profesor">Profesor</option>
+        </select><br>
         
         <input type="submit" value="Registrar">
     </form>

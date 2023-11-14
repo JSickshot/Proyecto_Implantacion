@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$conexion = new mysqli("localhost", "root", "", "pruebas");
+$conexion = new mysqli("localhost", "root", "", "Proyectoimplantacion");
 
 if ($conexion->connect_error) {
     die("Conexión fallida: " . $conexion->connect_error);
