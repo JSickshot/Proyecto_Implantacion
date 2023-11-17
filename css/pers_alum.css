@@ -109,3 +109,26 @@ th, td {
   overflow-y: auto;
   max-height: 400px; /* Ajusta esta altura según tu preferencia */
 }
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.info-container {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.info-alumno {
+  margin-top: 10px;
+}
+
+.info-item {
+  margin-bottom: 8px;
+}

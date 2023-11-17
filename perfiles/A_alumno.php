@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -10,6 +12,7 @@
 </head>
 
 <body>
+    
     <div class="Azul-fondo"></div>
     <div class="container">
         <a href="A_principal.html"><button>Principal</button></a>

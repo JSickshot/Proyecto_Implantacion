@@ -28,10 +28,10 @@ if (isset($_POST['nombre'], $_POST['password'])) {
             ];
 
             if ($rol == 'profesor') {
-                header("Location: ../perfiles/P_principal.html");
+                header("Location: ../perfiles/P_principal.php");
                 exit();
             } elseif ($rol == 'alumno') {
-                header("Location: ../perfiles/A_principal.html");
+                header("Location: ../perfiles/A_principal.php");
                 exit();
             } else {
                 echo '<script>alert("Error de credenciales");</script>';

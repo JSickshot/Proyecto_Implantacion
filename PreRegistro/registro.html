@@ -1,27 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Usuario</title>
+    <title>Registro</title>
 </head>
+
 <body>
     <h1>Inscripción</h1>
-    
-    <form action="procesar_registro.php" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" required><br>
-        
-        <label for="password">Contraseña:</label>
-        <input type="password" name="password" required><br>
 
-        <label for="rol">Rol:</label>
-        <select name="rol" required>
+    <form action="procesar_registro.php" method="post">
+        <label for="nombre">Nombre(s):</label>
+        <input type="text" name="nombre" id="nombre" required><br><br>
+
+        <label for="ApellidoP">Apellido paterno:</label>
+        <input type="text" name="ApellidoP"id="ApellidoP" required><br><br>
+
+        <label for="ApellidoM">Apellido materno:</label>
+        <input type="text" name="ApellidoM" id="ApellidoM" required><br><br>
+
+        <label for="Calle">Calle:</label>
+        <input type="text" name="Calle" id="Calle" required><br><br>
+
+        <label for="Delegacion">Delegación:</label>
+        <input type="text" name="Delegacion" id="Delegacion" required><br><br>
+
+        <label for="Colonia">Colonia:</label>
+        <input type="text" name="Colonia" id="Colonia" required><br><br>
+
+        <label for="Telefono">Telefono/celular:</label>
+        <input type="text" name="Telefono" id="Telefono" required><br><br>
+
+        <label for="Fecha_nac">Fecha de nacimiento:</label>
+        <input type="date" name="Fecha_nac" id="Fecha_nac" required><br><br>
+
+        <label for="password">Crear contraseña:</label>
+        <input type="password" name="password" id="password" required><br><br>
+
+        <label for="licenciatura">Licenciatura a inscribir: </label>
+        <select name="licenciatura" required >
+            <option value="">Licenciaturas disponibles</option>
+            <option value="Ing Sistemas Computacionales">Ing. Sistemas Computacionales</option>
+            <option value="Lic Gastronomia">Lic. Gastronomia</option>
+            <option value="Lic Psicologia">Lic. Psicologia</option>
+            <option value="Ing Mecatronica">Ing. Mecatronica</option>
+            <option value="Lic Actuaria">Lic. Actuaria</option>
+            <option value="Lic Progamación orientada">Lic. Progamación orientada</option>
+            <option value="Lic Administración de empresas">Lic. Administración de empresas</option>
+            <option value="Lic Contabilidad">Lic. Contabilidad</option>
+            <option value="Lic Derecho">Lic. Derecho</option>
+            <option value="Lic Lenguas Extrangeras">Lic. Lenguas Extrangeras</option>
+        </select><br> <br>
+
+        <select name="rol" required >
             <option value="alumno">Alumno</option>
             <option value="profesor">Profesor</option>
-        </select><br>
-        
+        </select><br>        
+
         <input type="submit" value="Registrar">
     </form>
 </body>
+
 </html>
