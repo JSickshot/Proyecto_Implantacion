@@ -10,15 +10,6 @@ $nombre_materia = $_POST['nombre_materia'];
 $grupo = $_POST['grupo']; 
 
 $sql = "INSERT INTO materias (nombre, grupo, id_profesor) VALUES ('$nombre_materia', '$grupo', $id_profesor)";
-Materia
-        Grupo
-        Lunes
-        Marte
-        Miercoles
-        Jueves
-        Viernes
-        Sabado
-        Salón
 
 
 if ($conexion->query($sql) === TRUE) {
