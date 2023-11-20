@@ -3,6 +3,6 @@ session_start();
 
 session_destroy();
 
-header("Location: ../Aplicacion/login.php");
+header("Location: ../Logeos/login.php");
 exit();
 ?>

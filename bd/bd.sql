@@ -11,6 +11,26 @@ CREATE TABLE usuarios (
         password VARCHAR(255),
         Licenciatura varchar(255),
         numero_cuenta VARCHAR(20),
-        rol VARCHAR(20) 
+        rol VARCHAR(20),
+        ruta_imagen varchar (255)
         );
 
+CREATE TABLE colegiaturas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    estudiante_id INT,
+    monto DECIMAL(10, 2),
+    fecha_pago DATE,
+    estado varchar(255),
+    CONSTRAINT fk_estudiante FOREIGN KEY (estudiante_id) REFERENCES usuarios(id)
+);
+
+INSERT INTO colegiaturas (estudiante_id, monto, fecha_pago, estado) VALUES
+(1, 500.00, '2023-01-15', 'Pendiente'),
+(1, 500.00, '2023-02-15', 'Pendiente'),
+(1, 500.00, '2023-03-15', 'Pendiente'),
+(2, 500.00, '2023-01-16', 'Pendiente'),
+(2, 500.00, '2023-02-16', 'Pendiente'),
+(2, 500.00, '2023-03-16', 'Pendiente'),
+(3, 500.00, '2023-01-17', 'Pendiente'),
+(3, 500.00, '2023-02-17', 'Pendiente'),
+(3, 500.00, '2023-03-17', 'Pendiente');

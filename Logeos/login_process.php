@@ -34,23 +34,21 @@ if (isset($_POST['nombre'], $_POST['password'])) {
                 header("Location: ../perfiles/A_principal.php");
                 exit();
             } else {
-                echo '<script>alert("Error de credenciales");</script>';
+                echo '<script>alert("Error de credenciales"); window.history.back();</script>';
+                exit();
             }
         } else {
-            echo '<script>alert("Contraseña incorrecta");</script>';
+            echo '<script>alert("Contraseña incorrecta"); window.history.back();</script>';
+            exit();
         }
     } else {
-        echo '<script>alert("Usuario no encontrado");</script>';
+        echo '<script>alert("Usuario no encontrado"); window.history.back();</script>';
+        exit();
     }
 } else {
-    echo '<script>alert("Nombre de usuario o contraseña no proporcionados");</script>';
+    echo '<script>alert("Nombre de usuario o contraseña no proporcionados"); window.history.back();</script>';
+    exit();
 }
 
 $conexion->close();
 ?>
-
-<script>
-    setTimeout(function () {
-        location.reload();
-    }, 1000); 
-</script>

@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -11,7 +9,6 @@
 </head>
 
 <body>
-    
 <div class="Azul-fondo"></div>
     <div class="container">
         <a href="A_principal.php"><button>Principal</button></a>
