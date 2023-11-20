@@ -54,7 +54,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $stmtActualizarColegiatura->bind_param("i", $colegiatura_id);
                 $stmtActualizarColegiatura->execute();
 
-                echo "Pago simulado realizado con éxito.";
             } else {
                 echo "La colegiatura no pertenece al estudiante.";
             }
