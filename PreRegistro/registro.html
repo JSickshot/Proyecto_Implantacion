@@ -48,7 +48,7 @@
 
         <label for="licenciatura">Licenciatura a inscribir: </label>
         <select name="licenciatura" required >
-            <option value="">Licenciaturas disponibles</option>
+            <option value="" disabled selected>Selecciona una licenciatura</option>
             <option value="Ing Sistemas Computacionales">Ing. Sistemas Computacionales</option>
             <option value="Lic Gastronomia">Lic. Gastronomia</option>
             <option value="Lic Psicologia">Lic. Psicologia</option>
@@ -64,6 +64,7 @@
         <select name="rol" required >
             <option value="alumno">Alumno</option>
             <option value="profesor">Profesor</option>
+            <option value="admin">admin</option>
         </select><br>        
 
         <input type="submit" value="Registrar">

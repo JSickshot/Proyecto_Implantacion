@@ -1,107 +1,117 @@
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/pers_enca.css">
-    <link rel="stylesheet" type="text/css" href="../css/pers_alum.css"> 
-    <title>Alumno</title>
+    <link rel="stylesheet" href="/Proyecto_implantacion/css/P_principal.css">
+    <title>Profesor</title>
 </head>
 
 <body>
     <div class="Azul-fondo"></div>
     <div class="container">
-        <a href="P_principal.html"><button>Principal</button></a>
-        <a href="P_horario.html"><button>Horario</button></a>
-        <a href="P_cursos.html"><button>Cursos</button></a>
-        <a href="P_Calificacion.html"><button>Calificaciones</button></a>
-        <a href="../Aplicacion/login.php"><button>Cerrar sesión</a>
+        <a href="P_principal.php"><button>Principal</button></a>
+        <a href="P_horario.php"><button>Horario</button></a>
+        <a href="P_cursos.php"><button>Cursos</button></a>
+        <a href="P_calificaciones.php"><button>Calificaciones</button></a>
+        <a href="../PreRegistro/cerrar-sesion.php"><button>Cerrar sesión</button></a>
     </div>
     <br><br>
 
-    
-    <h2>Tira de materias</h2>
-    <table id="tabla-camaras">
-        <thead>
-            <tr>
-                <th>Materia</th>
-                <th>Grupo</th>
-                <th>Lunes</th>
-                <th>Marte</th>
-                <th>Miercoles</th>
-                <th>Jueves</th>
-                <th>Viernes</th>
-                <th>Sabado</th>
-                <th>Salón</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><input type="text" name="tabla-camaras[0][0]" value=""></td>
-                <td><input type="text" name="tabla-camaras[0][1]" value=""></td>
-                <td><input type="text" name="tabla-camaras[0][2]" value=""></td>
-                <td><input type="text" name="tabla-camaras[0][3]" value=""></td>
-                <td><input type="text" name="tabla-camaras[0][4]" value=""></td>
-                <td><input type="text" name="tabla-camaras[0][5]" value=""></td>
-                <td><input type="text" name="tabla-camaras[0][6]" value=""></td>
-                <td><input type="text" name="tabla-camaras[0][7]" value=""></td>
-                <td><input type="text" name="tabla-camaras[0][8]" value=""></td>
-            </tr>
-            <tr>
-                <td><input type="text" name="tabla-camaras[1][0]" value=""></td>
-                <td><input type="text" name="tabla-camaras[1][1]" value=""></td>
-                <td><input type="text" name="tabla-camaras[1][2]" value=""></td>
-                <td><input type="text" name="tabla-camaras[1][3]" value=""></td>
-                <td><input type="text" name="tabla-camaras[1][4]" value=""></td>
-                <td><input type="text" name="tabla-camaras[1][5]" value=""></td>
-                <td><input type="text" name="tabla-camaras[1][5]" value=""></td>
-                <td><input type="text" name="tabla-camaras[1][5]" value=""></td>
-                <td><input type="text" name="tabla-camaras[1][5]" value=""></td>
-            </tr>
-            <tr>
-                <td><input type="text" name="tabla-camaras[2][0]" value=""></td>
-                <td><input type="text" name="tabla-camaras[2][1]" value=""></td>
-                <td><input type="text" name="tabla-camaras[2][2]" value=""></td>
-                <td><input type="text" name="tabla-camaras[2][3]" value=""></td>
-                <td><input type="text" name="tabla-camaras[2][4]" value=""></td>
-                <td><input type="text" name="tabla-camaras[2][5]" value=""></td>
-                <td><input type="text" name="tabla-camaras[2][5]" value=""></td>
-                <td><input type="text" name="tabla-camaras[2][5]" value=""></td>
-                <td><input type="text" name="tabla-camaras[2][5]" value=""></td>
-            </tr>
-            <tr>
-                <td><input type="text" name="tabla-camaras[3][0]" value=""></td>
-                <td><input type="text" name="tabla-camaras[3][1]" value=""></td>
-                <td><input type="text" name="tabla-camaras[3][2]" value=""></td>
-                <td><input type="text" name="tabla-camaras[3][3]" value=""></td>
-                <td><input type="text" name="tabla-camaras[3][4]" value=""></td>
-                <td><input type="text" name="tabla-camaras[3][5]" value=""></td>
-                <td><input type="text" name="tabla-camaras[3][5]" value=""></td>
-                <td><input type="text" name="tabla-camaras[3][5]" value=""></td>
-                <td><input type="text" name="tabla-camaras[3][5]" value=""></td>
-            </tr>
-            <tr>
-                <td><input type="text" name="tabla-camaras[4][0]" value=""></td>
-                <td><input type="text" name="tabla-camaras[4][1]" value=""></td>
-                <td><input type="text" name="tabla-camaras[4][2]" value=""></td>
-                <td><input type="text" name="tabla-camaras[4][3]" value=""></td>
-                <td><input type="text" name="tabla-camaras[4][4]" value=""></td>
-                <td><input type="text" name="tabla-camaras[4][5]" value=""></td>
-                <td><input type="text" name="tabla-camaras[4][5]" value=""></td>
-                <td><input type="text" name="tabla-camaras[4][5]" value=""></td>
-                <td><input type="text" name="tabla-camaras[4][5]" value=""></td>
-            </tr>
-            <tr>
-                <td><input type="text" name="tabla-camaras[5][0]" value=""></td>
-                <td><input type="text" name="tabla-camaras[5][1]" value=""></td>
-                <td><input type="text" name="tabla-camaras[5][2]" value=""></td>
-                <td><input type="text" name="tabla-camaras[5][3]" value=""></td>
-                <td><input type="text" name="tabla-camaras[5][4]" value=""></td>
-                <td><input type="text" name="tabla-camaras[5][5]" value=""></td>
-                <td><input type="text" name="tabla-camaras[5][5]" value=""></td>
-                <td><input type="text" name="tabla-camaras[5][5]" value=""></td>
-                <td><input type="text" name="tabla-camaras[5][5]" value=""></td>
-            </tr>
-        </tbody>
-    </table>
+
+
+</body>
+
+<?php
+include_once "../Conexion/db_config.php";
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
+session_start();
+
+if (!isset($_SESSION['usuario']) || $_SESSION['usuario']['rol'] !== 'profesor') {
+    header("Location: ../logeos/login.php");
+    exit();
+}
+
+$conexion = obtenerConexion();
+
+if (!$conexion) {
+    die("Conexión a la base de datos fallida.");
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST['nombre_curso'], $_POST['descripcion'])) {
+        $nombreCurso = $_POST['nombre_curso'];
+        $descripcion = $_POST['descripcion'];
+        $idProfesor = $_SESSION['usuario']['id'];
+
+        $sqlInsertarCurso = "INSERT INTO cursos (id_profesor, nombre_curso, descripcion) VALUES (?, ?, ?)";
+        $stmtInsertarCurso = $conexion->prepare($sqlInsertarCurso);
+
+        if ($stmtInsertarCurso) {
+            $stmtInsertarCurso->bind_param("iss", $idProfesor, $nombreCurso, $descripcion);
+            $stmtInsertarCurso->execute();
+
+            if ($stmtInsertarCurso->affected_rows > 0) {
+                $idCursoInsertado = $stmtInsertarCurso->insert_id;
+
+                // Insertar horario con relación al curso
+                $sqlInsertarHorario = "INSERT INTO horariop (id_usuario, id_curso, materia, horario, salon) VALUES (?, ?, ?, ?, ?)";
+                $stmtInsertarHorario = $conexion->prepare($sqlInsertarHorario);
+
+                if ($stmtInsertarHorario) {
+                    // Aquí debes asignar valores aleatorios a día, hora y grupo
+                    $dias = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes'];
+                    $horas = ['8:00-10:00', '10:00-12:00', '12:00-14:00', '14:00-16:00', '16:00-18:00'];
+
+                    $idUsuario = $_SESSION['usuario']['id'];
+                    $materia = "NombreMateria";  // Aquí deberías obtener el nombre de la materia de alguna manera
+                    $diaAleatorio = $dias[array_rand($dias)];
+                    $horaAleatoria = $horas[array_rand($horas)];
+                    $grupoAleatorio = generateRandomString(6);  // Función para generar grupo aleatorio
+
+                    $stmtInsertarHorario->bind_param("iisss", $idUsuario, $idCursoInsertado, $materia, "$diaAleatorio $horaAleatoria", $grupoAleatorio);
+                    $stmtInsertarHorario->execute();
+
+                    if ($stmtInsertarHorario->affected_rows > 0) {
+                        echo '<script>alert("Curso y horario agregados exitosamente.");</script>';
+                    } else {
+                        echo '<script>alert("Error al agregar el horario.");</script>';
+                    }
+
+                    $stmtInsertarHorario->close();
+                } else {
+                    echo "Error en la preparación de la consulta: " . $conexion->error;
+                }
+
+            } else {
+                echo '<script>alert("Error al agregar el curso.");</script>';
+            }
+
+            $stmtInsertarCurso->close();
+        } else {
+            echo "Error en la preparación de la consulta: " . $conexion->error;
+        }
+    }
+}
+
+function generateRandomString($length = 6) {
+    $characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    $randomString = '';
+
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, strlen($characters) - 1)];
+    }
+
+    return $randomString;
+}
+
+$conexion->close();
+?>

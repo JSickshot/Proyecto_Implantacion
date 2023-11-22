@@ -4,18 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/pers_enca.css">
-    <link rel="stylesheet" type="text/css" href="../css/pers_alum.css">
-    <title>Alumno</title>
+    <link rel="stylesheet" href="/Proyecto_implantacion/css/P_principal.css">
+    <title>Profesor</title>
 </head>
 
 <body>
     <div class="Azul-fondo"></div>
     <div class="container">
-        <a href="P_principal.html"><button>Principal</button></a>
-        <a href="P_horario.html"><button>Horario</button></a>
-        <a href="P_cursos.html"><button>Cursos</button></a>
-        <a href="P_Calificacion.html"><button>Calificaciones</button></a>
-        <a href="../Aplicacion/login.php"><button>Cerrar sesión</a>
+        <a href="P_principal.php"><button>Principal</button></a>
+        <a href="P_horario.php"><button>Horario</button></a>
+        <a href="P_cursos.php"><button>Cursos</button></a>
+        <a href="P_calificaciones.php"><button>Calificaciones</button></a>
     </div>
     <br><br>

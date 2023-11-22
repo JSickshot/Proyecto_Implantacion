@@ -33,6 +33,9 @@ if (isset($_POST['nombre'], $_POST['password'])) {
             } elseif ($rol == 'alumno') {
                 header("Location: ../perfiles/A_principal.php");
                 exit();
+            } elseif ($rol == 'admin') {  
+                header("Location: ../Administrador/admin.php");
+                exit();
             } else {
                 echo '<script>alert("Error de credenciales"); window.history.back();</script>';
                 exit();
