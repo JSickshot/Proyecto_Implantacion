@@ -51,13 +51,9 @@ if (!$resultUsuarios || !$resultHorarios) {
             <th>Nombre</th>
             <th>Apellido Paterno</th>
             <th>Apellido Materno</th>
-            <th>Calle</th>
-            <th>Delegación</th>
-            <th>Colonia</th>
-            <th>Telefono</th>
-            <th>Fecha de Nacimiento</th>
-            <th>Contraseña</th>
-            <th>Acciones</th>
+            <th>pwd</th>
+            <th></th>
+            <th></th>
             
         </tr>
 
@@ -67,12 +63,8 @@ if (!$resultUsuarios || !$resultHorarios) {
                 <td><?= $row['nombre'] ?></td>
                 <td><?= $row['ApellidoP'] ?></td>
                 <td><?= $row['APELLIDOM'] ?></td>
-                <td><?= $row['CALLE'] ?></td>
-                <td><?= $row['DELEGACION'] ?></td>
-                <td><?= $row['COLONIA'] ?></td>
-                <td><?= $row['TELEFONO'] ?></td>
-                <td><?= $row['FECHA_NAC'] ?></td>
                 <td><?= $row['password'] ?></td>
+                
                 <td><button class="eliminar" data-id="<?= $row['id'] ?>" onclick="eliminarUsuario(<?= $row['id'] ?>)">Eliminar</button></td>
                 <td><button onclick="modificarUsuario(<?= $row['id'] ?>)">Modificar</button></td>
                 
@@ -86,16 +78,13 @@ if (!$resultUsuarios || !$resultHorarios) {
     <h2>Horarios con éxito:</h2>
     <table border='1'>
         <tr>
-            <th>ID</th>
-            <th>ID Usuario</th>
+            
             <th>Materia</th>
             <th>Horario</th>
         </tr>
 
         <?php while ($row = $resultHorarios->fetch_assoc()) : ?>
             <tr>
-                <td><?= $row['id'] ?></td>
-                <td><?= $row['id_usuario'] ?></td>
                 <td><?= $row['materia'] ?></td>
                 <td><?= $row['horario'] ?></td>
             </tr>

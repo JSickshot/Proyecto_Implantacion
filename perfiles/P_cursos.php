@@ -102,7 +102,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <label for="descripcion">Descripción del Curso:</label>
         <textarea id="descripcion" name="descripcion" required></textarea><br><br>
 
-        <input type="submit" value="Agregar Curso">
+        <input type="submit" value="Dar de alta el curso">
     </form>
 
 </body>

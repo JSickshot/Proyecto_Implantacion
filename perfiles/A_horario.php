@@ -87,7 +87,7 @@
             }
             echo "</ul>";
         } else {
-            echo "<p>No hay horarios almacenados.</p>";
+            echo "<p>Favor de seleccionar sus 5 materias. </p>";
         }
 
         $stmtConsultarHorarios->close();

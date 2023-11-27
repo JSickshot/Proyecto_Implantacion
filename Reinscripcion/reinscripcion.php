@@ -43,7 +43,9 @@ $conn->close();
     <input type="text" name="apellido_materno" required>
     <br>
 
-    <input type="submit" value="Procesar Solicitud">
+    <input type="submit" value="Procesar Solicitud"><br>
+    <a href="#" class="boton-favor" onclick="history.go(-1); return false;"><button>Regresar a nuestro portal</button> </a>
+
 </form>
 
 </body>

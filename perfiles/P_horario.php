@@ -62,20 +62,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if ($stmtInsertarCurso->affected_rows > 0) {
                 $idCursoInsertado = $stmtInsertarCurso->insert_id;
 
-                // Insertar horario con relación al curso
                 $sqlInsertarHorario = "INSERT INTO horariop (id_usuario, id_curso, materia, horario, salon) VALUES (?, ?, ?, ?, ?)";
                 $stmtInsertarHorario = $conexion->prepare($sqlInsertarHorario);
 
                 if ($stmtInsertarHorario) {
-                    // Aquí debes asignar valores aleatorios a día, hora y grupo
                     $dias = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes'];
                     $horas = ['8:00-10:00', '10:00-12:00', '12:00-14:00', '14:00-16:00', '16:00-18:00'];
 
                     $idUsuario = $_SESSION['usuario']['id'];
-                    $materia = "NombreMateria";  // Aquí deberías obtener el nombre de la materia de alguna manera
+                    $materia = "NombreMateria";  
                     $diaAleatorio = $dias[array_rand($dias)];
                     $horaAleatoria = $horas[array_rand($horas)];
-                    $grupoAleatorio = generateRandomString(6);  // Función para generar grupo aleatorio
+                    $grupoAleatorio = generateRandomString(6);  
 
                     $stmtInsertarHorario->bind_param("iisss", $idUsuario, $idCursoInsertado, $materia, "$diaAleatorio $horaAleatoria", $grupoAleatorio);
                     $stmtInsertarHorario->execute();
@@ -115,3 +113,5 @@ function generateRandomString($length = 6) {
 
 $conexion->close();
 ?>
+<h1>Página en Mantenimiento</h1>
+    <p>Perdón por las demoras. Estamos trabajando para mejorar nuestro sitio y volveremos pronto.</p>
