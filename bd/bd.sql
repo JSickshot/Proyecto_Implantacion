@@ -22,6 +22,20 @@ insert into usuarios (nombre,ApellidoP,APELLIDOM,calle,DELEGACION,COLONIA,TELEFO
 Licenciatura,numero_cuenta,rol,estado) values ('Adrien osamet', 'Ojeda','Trasviña', 'Aquiles serda', 'Esterito', 'Esterito', '61215543212', '1996-06-11', 
 12345, 'Lic. Actuaria', 'A12345678','alumno', 0);
 
+insert into usuarios (nombre,ApellidoP,APELLIDOM,calle,DELEGACION,COLONIA,TELEFONO,FECHA_NAC,password,
+Licenciatura,numero_cuenta,rol,estado) values ('Jasmin', 'Zarate','Chula', 'Chabacano', 'Haiti', 'Santo Domingo', '19207491876', '1998-03-09', 
+82937, 'Lic. Arquitectura', 'A18293047','alumno', 0);
+
+insert into usuarios (nombre,ApellidoP,APELLIDOM,calle,DELEGACION,COLONIA,TELEFONO,FECHA_NAC,password,
+Licenciatura,numero_cuenta,rol,estado) values ('Frida', 'Gutierrez','Treviño', 'Cereza', 'Exposito', 'Bombas', '83947129087', '1890-10-01', 
+12355, 'Lic. Panaderia', 'A78965439','alumno', 0);
+
+insert into usuarios (nombre,ApellidoP,APELLIDOM,calle,DELEGACION,COLONIA,TELEFONO,FECHA_NAC,password,
+Licenciatura,numero_cuenta,rol,estado) values ('Emiliano', 'Quiroz','Cervantes', 'Lomas Estrella', 'Canal de chalco', 'Escritorio', '81111889965', '2003-10-11', 
+12222, 'Lic. Sanborns', 'A92634876','alumno', 0);
+
+
+
 
 CREATE TABLE colegiaturas (
     id INT AUTO_INCREMENT PRIMARY KEY,
