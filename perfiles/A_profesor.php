@@ -14,7 +14,6 @@
         <a href="A_principal.php"><button>Principal</button></a>
         <a href="A_horario.php"><button>Horario</button></a>
         <a href="A_profesor.php"><button>Profesor</button></a>
-        <a href="A_materias.php"><button>Materias/Carreras</button></a>
         <a href="A_calificacion.php"><button>Calificaciones/Asistencias</button></a>
         <a href="../PreRegistro/cerrar-sesion.php"><button>Cerrar sesión</button></a>
     </div>

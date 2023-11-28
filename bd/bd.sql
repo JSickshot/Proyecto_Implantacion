@@ -12,8 +12,15 @@ CREATE TABLE usuarios (
     Licenciatura VARCHAR(255),
     numero_cuenta VARCHAR(20) UNIQUE, 
     rol VARCHAR(20),
-    ruta_imagen VARCHAR(255)
+    ruta_imagen VARCHAR(255),
+    estado BOOLEAN NOT NULL DEFAULT 1,
+    id_materia INT,  
+    id_horario INT
 );
+
+insert into usuarios (nombre,ApellidoP,APELLIDOM,calle,DELEGACION,COLONIA,TELEFONO,FECHA_NAC,password,
+Licenciatura,numero_cuenta,rol,estado) values ('Adrien osamet', 'Ojeda','Trasviña', 'Aquiles serda', 'Esterito', 'Esterito', '61215543212', '1996-06-11', 
+12345, 'Lic. Actuaria', 'A12345678','alumno', 0);
 
 
 CREATE TABLE colegiaturas (
@@ -44,6 +51,8 @@ CREATE TABLE horarios (
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id)
 );
 
+INSERT INTO horarios (id_usuario, materia, horario) VALUES (1, 'Matemáticas', 'Lunes 10:00 AM - 12:00 PM');
+
 CREATE TABLE cursos (
     id_curso INT AUTO_INCREMENT PRIMARY KEY,
     id_profesor INT,
@@ -54,6 +63,11 @@ CREATE TABLE cursos (
     FOREIGN KEY (id_profesor) REFERENCES usuarios(id)
 );
 
+INSERT INTO cursos (id_profesor, nombre_curso, descripcion, horario, salon)
+VALUES (7, 'Modelado de programación ', 'POO', 'Lunes 12:00 PM - 14:00 PM', 'Salón F302');
+INSERT INTO cursos (id_profesor, nombre_curso, descripcion, horario, salon)
+VALUES (7, 'Introducción a Sistemas Operativos ', 'introducción a sistema operativo windows 10', 'Lunes 7:00 AM - 12:00 PM', 'Salón F102');
+
 CREATE TABLE horariosp (
     id INT AUTO_INCREMENT PRIMARY KEY,
     id_usuario INT,
@@ -62,4 +76,11 @@ CREATE TABLE horariosp (
     horario VARCHAR(255),
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id),
     FOREIGN KEY (id_curso) REFERENCES cursos(id_curso)  
+);
+
+CREATE TABLE materias (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    descripcion TEXT,
+    creditos INT
 );
