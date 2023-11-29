@@ -65,7 +65,12 @@ CREATE TABLE horarios (
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id)
 );
 
-INSERT INTO horarios (id_usuario, materia, horario) VALUES (1, 'Matemáticas', 'Lunes 10:00 AM - 12:00 PM');
+CREATE TABLE calificaciones (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_horario INT,
+    calificacion INT,
+    FOREIGN KEY (id_horario) REFERENCES horarios(id)
+);
 
 CREATE TABLE cursos (
     id_curso INT AUTO_INCREMENT PRIMARY KEY,
@@ -82,15 +87,6 @@ VALUES (7, 'Modelado de programación ', 'POO', 'Lunes 12:00 PM - 14:00 PM', 'Sa
 INSERT INTO cursos (id_profesor, nombre_curso, descripcion, horario, salon)
 VALUES (7, 'Introducción a Sistemas Operativos ', 'introducción a sistema operativo windows 10', 'Lunes 7:00 AM - 12:00 PM', 'Salón F102');
 
-CREATE TABLE horariosp (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    id_usuario INT,
-    id_curso INT,  
-    materia VARCHAR(255),
-    horario VARCHAR(255),
-    FOREIGN KEY (id_usuario) REFERENCES usuarios(id),
-    FOREIGN KEY (id_curso) REFERENCES cursos(id_curso)  
-);
 
 CREATE TABLE materias (
     id INT AUTO_INCREMENT PRIMARY KEY,

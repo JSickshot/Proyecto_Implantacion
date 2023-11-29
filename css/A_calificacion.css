@@ -1,0 +1,89 @@
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            background-color: #2c3e50;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .container a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: white;
+        }
+        
+        button {
+            background-color: #2c3e50; 
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        
+        .info-alumno-container {
+            text-align: center;
+        }
+        
+        .info-alumno {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .info-item {
+            margin-bottom: 10px;
+        }
+        
+        .info-item-container {
+            border: 2px solid #2c3e50; 
+            padding: 1px;
+            margin-bottom: 10px;
+        }
+        
+        .profile-image {
+            border-radius: 50%; 
+        }
+        
+        .container {
+            text-align: center;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .materia-calificacion {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+        }
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+
+            .printable-content, .printable-content * {
+                visibility: visible;
+            }
+
+            .printable-content {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    
