@@ -2,34 +2,42 @@
 include_once "../Conexion/db_config.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['id'])) {
-    $idUsuario = $_POST['id'];
-    
-    $conexion = obtenerConexion();
+    $idUsuario = filter_var($_POST['id'], FILTER_VALIDATE_INT);
 
-    if ($conexion->connect_error) {
-        die("Conexión a la base de datos fallida: " . $conexion->connect_error);
-    }
+    if ($idUsuario !== false && $idUsuario > 0) {
+        $conexion = obtenerConexion();
 
-    $sqlEliminarUsuario = "DELETE FROM usuarios WHERE id = ?";
-    $stmtEliminarUsuario = $conexion->prepare($sqlEliminarUsuario);
-
-    if ($stmtEliminarUsuario) {
-        $stmtEliminarUsuario->bind_param("i", $idUsuario);
-        $stmtEliminarUsuario->execute();
-
-        if ($stmtEliminarUsuario->affected_rows > 0) {
-            echo "Usuario eliminado exitosamente.";
-        } else {
-            echo "Error al eliminar el usuario: " . $stmtEliminarUsuario->error;
+        if ($conexion->connect_error) {
+            die("Conexión a la base de datos fallida: " . $conexion->connect_error);
         }
 
-        $stmtEliminarUsuario->close();
-    } else {
-        echo "Error en la preparación de la consulta: " . $conexion->error;
-    }
+        $sqlEliminarUsuario = "DELETE FROM usuarios WHERE id = ?";
+        $stmtEliminarUsuario = $conexion->prepare($sqlEliminarUsuario);
 
-    $conexion->close();
+        try {
+            if ($stmtEliminarUsuario) {
+                $stmtEliminarUsuario->bind_param("i", $idUsuario);
+                $stmtEliminarUsuario->execute();
+
+                if ($stmtEliminarUsuario->affected_rows > 0) {
+                    echo json_encode(['success' => true, 'message' => 'Usuario eliminado correctamente.']);
+                } else {
+                    echo json_encode(['success' => false, 'message' => 'No se encontró ningún usuario con el ID proporcionado para eliminar.']);
+                }
+
+                $stmtEliminarUsuario->close();
+            } else {
+                throw new Exception("Error en la preparación de la consulta: " . $conexion->error);
+            }
+        } catch (Exception $e) {
+            echo json_encode(['success' => false, 'message' => 'Error: ' . $e->getMessage()]);
+        }
+
+        $conexion->close();
+    } else {
+        echo json_encode(['success' => false, 'message' => 'ID de usuario no válido.']);
+    }
 } else {
-    echo "Solicitud no válida.";
+    echo json_encode(['success' => false, 'message' => 'Solicitud no válida.']);
 }
 ?>
