@@ -36,7 +36,7 @@ $conn->close();
 
 <body>
 
-    <h2>Formulario de Reinscripción</h2>
+    <h2 class="encabezado">Formulario de Reinscripción</h2>
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <label for="numero_cuenta">Número de Cuenta:</label>
@@ -56,7 +56,7 @@ $conn->close();
                 portal</button> </a>
 
     </form>
-    
+
     </div>
         <img src="../image/buho.png" alt="Descripción de la imagen"
             style="width: 99px; height: auto; margin-left: 0; margin-right: 0;">

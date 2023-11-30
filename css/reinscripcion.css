@@ -65,21 +65,22 @@ input[type="submit"] {
     background-color: #1a252f;
 }
 
-.h2 {
-    flex-direction: column; 
-    background-color: #2c3e50;
+/* Estilos para el encabezado h2 */
+h2.encabezado {
+    background-color: #2c3e50; /* Color diferente para el encabezado */
+    color: white; /* Color del texto */
     padding: 10px;
-    width: 99%;
     text-align: right;
-
 }
 
+/* Estilos para la imagen */
 .image-container {
-    margin-right: 20px; 
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    margin: 20px auto; /* Espaciado y centrado */
 }
 
-img {
-    max-width: 20%;
+.image-container img {
+    max-width: 200px; /* Tamaño máximo de la imagen */
     border-radius: 8px;
 }
-
