@@ -56,6 +56,13 @@ $conn->close();
                 portal</button> </a>
 
     </form>
+    
+    </div>
+        <img src="../image/buho.png" alt="Descripción de la imagen"
+            style="width: 99px; height: auto; margin-left: 0; margin-right: 0;">
+
+    </div>
+
 
 </body>
 
