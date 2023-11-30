@@ -132,10 +132,3 @@ VALUES (7, 'Modelado de programación ', 'POO', 'Lunes 12:00 PM - 14:00 PM', 'Sa
 INSERT INTO cursos (id_profesor, nombre_curso, descripcion, horario, salon)
 VALUES (7, 'Introducción a Sistemas Operativos ', 'introducción a sistema operativo windows 10', 'Lunes 7:00 AM - 12:00 PM', 'Salón F102');
 
-
-CREATE TABLE materias (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(255) NOT NULL,
-    descripcion TEXT,
-    creditos INT
-);
