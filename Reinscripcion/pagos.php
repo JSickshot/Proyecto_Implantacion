@@ -45,9 +45,7 @@ if (isset($error_pago)) {
 ?>
 
 <pre>
-<?php
-var_dump($_SESSION);
-?>
+
 </pre>
 
 </body>
