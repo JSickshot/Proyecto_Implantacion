@@ -5,7 +5,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $numero_cuenta = $_POST["numero_cuenta"];
     $apellido_paterno = $_POST["apellido_paterno"];
     $apellido_materno = $_POST["apellido_materno"];
-
     $sql_select = "SELECT * FROM usuarios WHERE numero_cuenta='$numero_cuenta' AND ApellidoP='$apellido_paterno' AND APELLIDOM='$apellido_materno'";
     $result = $conn->query($sql_select);
 
@@ -31,6 +30,7 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reinscripcion.css">
     <title>Formulario de Reinscripción</title>
 </head>
 
