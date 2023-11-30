@@ -54,15 +54,12 @@ $conn->close();
         <input type="submit" value="Procesar Solicitud"><br>
         <a href="#" class="boton-favor" onclick="history.go(-1); return false;"><button>Regresar a nuestro
                 portal</button> </a>
+                
+    </div class="image-container">
+        <img src="../image/buho.png" alt="Descripción de la imagen"
+    </div>
 
     </form>
-
-    </div>
-        <img src="../image/buho.png" alt="Descripción de la imagen"
-            style="width: 99px; height: auto; margin-left: 0; margin-right: 0;">
-
-    </div>
-
 
 </body>
 
