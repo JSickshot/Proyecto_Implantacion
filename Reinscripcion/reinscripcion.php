@@ -57,7 +57,9 @@ $conn->close();
                 
     </div class="image-container">
         <img src="../image/buho.png" alt="Descripción de la imagen"
-    </div>
+            style="width: 99px; height: auto; margin-left: 0; margin-right: 0;">
+
+</div>
 
     </form>
 

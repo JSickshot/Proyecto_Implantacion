@@ -73,14 +73,11 @@ h2.encabezado {
     text-align: right;
 }
 
-/* Estilos para la imagen */
 .image-container {
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    margin: 20px auto; /* Espaciado y centrado */
+    margin-right: 20px; 
 }
 
-.image-container img {
-    max-width: 20px; /* Tamaño máximo de la imagen */
+img {
+    max-width: 20%;
     border-radius: 8px;
 }
