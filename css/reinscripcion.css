@@ -79,3 +79,16 @@ input[type="submit"] {
 .boton-favor button:hover {
     background-color: #1a252f;
 }
+
+/* Estilos para el encabezado */
+.encabezado {
+    background-color: #3498db; /* Color del encabezado */
+    padding: 40px; /* Espaciado interno del encabezado */
+    text-align: center; /* Alineación del contenido */
+}
+
+.encabezado img {
+    width: 200px; /* Tamaño de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-bottom: 20px; /* Espacio inferior para separar la imagen */
+}
