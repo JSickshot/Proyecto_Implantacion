@@ -81,6 +81,6 @@ h2.encabezado {
 }
 
 .image-container img {
-    max-width: 200px; /* Tamaño máximo de la imagen */
+    max-width: 20px; /* Tamaño máximo de la imagen */
     border-radius: 8px;
 }
