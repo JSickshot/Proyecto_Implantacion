@@ -4,12 +4,12 @@ alumno se quera inscribrir -ck
 3) debe poder entregar un informe tipo historial academico de materias cursadas
 y sus calificaciones de cada una. ck
 4) tener un perfil de profesor para poder visualizar la materia y ver que alumnos
-estan inscritos. p
+estan inscritos. ck
 5) desde el perfil alumno que se muestre su horario de acuerdo a las materias
 seleccionadas. ck
 6) desde el perfil alumno poder ver cuantas materias hacen falta para concluir la
-carrera. p
+carrera. p----------
 7) se debe poder viosualziar si hay colegiaturas pendientes de pago y un total de
 pago dependiendo de cantidad de materias pendientes para finalziar la carrera ck
 8) perfil admin que es quie gestiona las materias, alumnos, etc ck
-9) perfil docente para gestionar calificaciones, sus horarios disponible. casi p
+9) perfil docente para gestionar calificaciones, sus horarios disponible. ck
