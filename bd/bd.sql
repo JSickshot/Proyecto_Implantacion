@@ -117,13 +117,6 @@ CREATE TABLE calificaciones (
     FOREIGN KEY (id_horario) REFERENCES horarios(id)
 );
 
-CREATE TABLE Pcalificaciones (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    id_usuario INT,
-    calificacion INT,
-    FOREIGN KEY (id_usuario) REFERENCES usuarios(id)
-);
-
 CREATE TABLE cursos (
     id_curso INT AUTO_INCREMENT PRIMARY KEY,
     id_profesor INT,
