@@ -75,10 +75,11 @@ h2.encabezado {
 
 .image-container {
     margin-right: 20px; 
-    justify-content: center;
+    text-align: center;
 }
 
 img {
     max-width: 20%;
     border-radius: 8px;
+    display: inline-block;
 }
