@@ -9,7 +9,7 @@
 
 <body>
     <div class="header">
-        <a href="../reinscripcion/reinscripcion.php" class="header-text">Reinscripción</a>
+        <a href="../php/reinscripcion.php" class="header-text">Reinscripción</a>
         <a href="../index.html" class="header-text">Regresar</a>
     </div>
 

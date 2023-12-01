@@ -16,7 +16,7 @@
         <a href="P_horario.php"><button>Horario</button></a>
         <a href="P_cursos.php"><button>Cursos</button></a>
         <a href="P_calificacion.php"><button>Calificaciones</button></a>
-        <a href="../PreRegistro/cerrar-sesion.php"><button>Cerrar sesión</button></a>
+        <a href="../php/cerrar-sesion.php"><button>Cerrar sesión</button></a>
     </div>
     <br><br>
 

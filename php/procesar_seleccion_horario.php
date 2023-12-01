@@ -20,7 +20,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $idUsuario = $_SESSION['usuario']['id'];
 
         if ($idUsuario && $materia && $horario) {
-            // Verificar cuántas materias ya ha almacenado el usuario
             $sqlContarMaterias = "SELECT COUNT(*) as cantidad FROM horarios WHERE id_usuario = ?";
             $stmtContarMaterias = $conexion->prepare($sqlContarMaterias);
 

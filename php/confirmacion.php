@@ -18,7 +18,7 @@
             echo "<p>Error: No se proporcionó un número de cuenta.</p>";
         }
         ?>
-        <p><a href="../Logeos/login.php">Iniciar sesión</a></p>
+        <p><a href="../php/login.php">Iniciar sesión</a></p>
     </div>
 </body>
 </html>

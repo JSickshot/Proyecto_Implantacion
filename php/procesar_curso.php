@@ -4,7 +4,7 @@ include_once "../Conexion/db_config.php";
 session_start();
 
 if (!isset($_SESSION['usuario']) || $_SESSION['usuario']['rol'] !== 'profesor') {
-    header("Location: ../logeos/login.php");
+    header("Location: ../php/login.php");
     exit();
 }
 

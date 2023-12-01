@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($cantidad_ingresada >= $costo_total) {
         
-        header("Location: confirmacion.php");
+        header("Location: pconfirmacion.php");
         exit();
     } else {
         $error_pago = "La cantidad ingresada no es suficiente.";

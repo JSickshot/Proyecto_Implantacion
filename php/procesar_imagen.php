@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['usuario'])) {
-    header("Location: ../logeos/login.php");
+    header("Location: ../php/login.php");
     exit();
 }
 

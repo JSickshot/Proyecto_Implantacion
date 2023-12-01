@@ -4,7 +4,7 @@ include_once "../Conexion/db_config.php";
 session_start();
 
 if (!isset($_SESSION['usuario']) || $_SESSION['usuario']['rol'] !== 'profesor') {
-    header("Location: ../logeos/login.php");
+    header("Location: ../php/login.php");
     exit();
 }
 
@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <a href="P_horario.php"><button>Horario</button></a>
         <a href="P_cursos.php"><button>Cursos</button></a>
         <a href="P_calificacion.php"><button>Calificaciones</button></a>
-        <a href="../PreRegistro/cerrar-sesion.php"><button>Cerrar sesión</button></a>
+        <a href="../php/cerrar-sesion.php"><button>Cerrar sesión</button></a>
     </div>
     <br><br><br>
 

@@ -16,7 +16,7 @@
     <div class="container">
         <div class="login-form">
             <h2>Bienvenido</h2>
-            <form action="login_process.php" method="post">
+            <form action="plogin_process.php" method="post">
 
                 <label for="nombre">Usuario:</label>
                 <input type="text" name="nombre" required><br>

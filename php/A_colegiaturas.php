@@ -54,7 +54,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $stmtActualizarColegiatura->bind_param("i", $colegiatura_id);
                 $stmtActualizarColegiatura->execute();
 
-                echo "Pago simulado realizado con éxito.";
             } else {
                 echo "La colegiatura no pertenece al estudiante.";
             }
@@ -76,6 +75,8 @@ $conexion->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/colegiaturas.css">
+
     <title>Colegiaturas</title>
 </head>
 
@@ -85,7 +86,6 @@ $conexion->close();
     <?php if ($resultColegiaturas->num_rows > 0) : ?>
         <table border="1">
             <tr>
-                <th></th>
                 <th>Monto</th>
                 <th>Fecha de Pago</th>
                 <th>Estado</th>
@@ -93,7 +93,6 @@ $conexion->close();
             </tr>
             <?php while ($row = $resultColegiaturas->fetch_assoc()) : ?>
                 <tr>
-                    <td><?php echo $row['id']; ?></td>
                     <td><?php echo $row['monto']; ?></td>
                     <td><?php echo $row['fecha_pago']; ?></td>
                     <td><?php echo $row['estado']; ?></td>
@@ -114,7 +113,7 @@ $conexion->close();
         <p>No hay colegiaturas registradas.</p>
     <?php endif; ?>
 
-    <a href="../PreRegistro/cerrar-sesion.php">Cerrar sesión</a>
-</body>
+    <a href="../php/cerrar-sesion.php">Cerrar sesión</a>
+</body> 
 
 </html>

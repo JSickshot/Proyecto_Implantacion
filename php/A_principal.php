@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['usuario'])) {
-    header("Location: ../Logeos/login.php");
+    header("Location: ../php/login.php");
     exit();
 }
 
@@ -51,7 +51,7 @@ $conexion->close();
         <a href="A_principal.php"><button>Principal</button></a>
         <a href="A_horario.php"><button>Horario</button></a>
         <a href="A_calificacion.php"><button>Calificaciones/Asistencias</button></a>
-        <a href="../PreRegistro/cerrar-sesion.php"><button>Cerrar sesión</button></a>
+        <a href="../php/cerrar-sesion.php"><button>Cerrar sesión</button></a>
     </div>
     <br>
     <br>
